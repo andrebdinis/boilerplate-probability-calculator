@@ -1,0 +1,40 @@
+#####################################################
+HOW TO USE A VARIABLE NUMBER OF ARGUMENTS IN PYTHON FUNCTIONS:
+
+# *args allow you to pass a variable number of non-keyword arguments that are packed into a tuple
+# **kwargs allow you to pass a variable number of keyword arguments that are packed into a dictionary
+
+# DOC: https://towardsdatascience.com/how-to-use-variable-number-of-arguments-in-python-functions-d3a49a9b7db6
+#####################################################
+# COPY LIBRARY USAGE:
+
+import copy
+copy.copy(x)   # shallow copy
+copy.deepcopy(x)  # deep copy
+
+# DOC: https://docs.python.org/3/library/copy.html#module-copy
+#####################################################
+# RANDOM LIBRARY USAGE:
+
+import random
+random.random()  # Return the next random floating point number in the range [0.0, 1.0)
+random.randrange(start, stop [, step])  # Return a randomly selected element from range(start, stop, step)
+random.uniform(a, b)  # Return a random floating point number between the smaller number and bigger number
+random.sample()  # 
+# Sampling without replacement can be defined as random sampling that DOES NOT allow sampling units to occur more than once.
+
+random.seed(95)  # Initialize the random number generator.
+# By default the random number generator uses the current system time. The random number generator needs a number to start with (a seed value), to be able to generate a random number. Note: If you use the same seed value twice you will get the same random number twice. See example below:
+  random.seed(10)
+  print(random.random())
+  # 0.5714025946899135
+  random.seed(10)
+  print(random.random())
+  # 0.5714025946899135
+
+# DOC: https://docs.python.org/3/library/random.html#examples
+# DOC: https://www.w3schools.com/python/ref_random_seed.asp
+#####################################################
+FOR BETTER RANDOMNESS, ALSO SEE "SECRETS" MODULE:
+# DOC: https://docs.python.org/3/library/secrets.html#module-secrets
+#####################################################
